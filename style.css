@@ -83,7 +83,7 @@ nav ul li a.active {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width:600px) {
   .checkbtn {
     display: block;
   }
@@ -129,6 +129,19 @@ nav ul li a.active {
   .contacts img {
     width: 40px;
     height: 40px;
+  }
+
+  /*  Subscribe Responsive */
+  .esub {
+    padding: 15px;
+  }
+
+  .esubscribe {
+    gap: 10px;
+  }
+
+  .esubscribe button {
+    font-size: 14px;
   }
 }
 
@@ -176,6 +189,7 @@ body .contact-group {
   margin: 0;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+  backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -193,4 +207,92 @@ body .contact-group {
 .contacts img:hover {
   transform: scale(1.2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Email Subscription */
+
+body .esub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.esub {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.esubscribe {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.esubscribe label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.esubscribe input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button-28 Imported */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
