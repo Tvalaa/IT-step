@@ -83,7 +83,7 @@ nav ul li a.active {
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 550px) {
   .checkbtn {
     display: block;
   }
@@ -118,6 +118,18 @@ nav ul li a.active {
   #check:checked~ul {
     left: 0;
   }
+
+  /* Contacts */
+
+  .contacts {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contacts img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 
@@ -137,4 +149,48 @@ nav ul li a.active {
 
 h3 {
   color: white;
+}
+
+/* Contact Group */
+
+body .contact-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.contact-group {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 30px 30px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contacts li {
+  display: inline-block;
+}
+
+.contacts img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacts img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
